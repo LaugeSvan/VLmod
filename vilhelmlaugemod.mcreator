@@ -1,0 +1,178 @@
+{
+  "mod_elements": [
+    {
+      "name": "Cigarette",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cigarette",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vilhelmlaugemod/item/CigaretteItem.java",
+          "src/main/resources/assets/vilhelmlaugemod/models/item/cigarette.json"
+        ]
+      }
+    },
+    {
+      "name": "Tablogo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tobakko",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/vilhelmlaugemod/models/item/tobakko.json",
+          "src/main/java/net/mcreator/vilhelmlaugemod/item/TablogoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Tobacco",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tobacco",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "TobaccoDrop",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tobacco_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vilhelmlaugemod/loot_table/blocks/leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "BurningCigarette",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_cigarette",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/vilhelmlaugemod/models/item/burning_cigarette.json",
+          "src/main/java/net/mcreator/vilhelmlaugemod/item/BurningCigaretteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BurningCigaretteRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_cigarette_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vilhelmlaugemod/procedures/BurningCigaretteRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CigaretteRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cigarette_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/vilhelmlaugemod/procedures/CigaretteRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tobaccoplant",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tobaccoplant",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vilhelmlaugemod/loot_table/blocks/tobaccoplant.json",
+          "src/main/resources/assets/vilhelmlaugemod/models/block/tobaccoplant.json",
+          "src/main/resources/data/vilhelmlaugemod/worldgen/configured_feature/tobaccoplant.json",
+          "src/main/resources/assets/vilhelmlaugemod/models/item/tobaccoplant.json",
+          "src/main/java/net/mcreator/vilhelmlaugemod/block/TobaccoplantBlock.java",
+          "src/main/resources/data/vilhelmlaugemod/neoforge/biome_modifier/tobaccoplant_biome_modifier.json",
+          "src/main/resources/data/vilhelmlaugemod/worldgen/placed_feature/tobaccoplant.json",
+          "src/main/resources/assets/vilhelmlaugemod/blockstates/tobaccoplant.json",
+          "src/main/resources/assets/vilhelmlaugemod/models/block/tobaccoplant_bottom.json"
+        ]
+      }
+    },
+    {
+      "name": "Cigarecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cigarecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/vilhelmlaugemod/recipe/cigarecipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:BurningCigarette"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.vilhelmlaugemod.cigarette": "Cigarette",
+      "item_group.vilhelmlaugemod.tobacco": "Tobacco",
+      "block.vilhelmlaugemod.tobaccoplant": "Tobacco Plant",
+      "item.vilhelmlaugemod.tobakko": "Tobacco",
+      "item.vilhelmlaugemod.burning_cigarette": "Burning Cigarette"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "vilhelmlaugemod",
+    "modName": "VLmod",
+    "version": "1.0.0",
+    "author": "vilhe, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "net.mcreator.vilhelmlaugemod"
+  },
+  "mcreatorVersion": 202400452410
+}
